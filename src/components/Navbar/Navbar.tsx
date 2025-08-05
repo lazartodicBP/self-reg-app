@@ -1,16 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
     <div>
-      <div className="gradient" />
-      <div className="nav lg-nav u-justify-space-evenly ">
+      <div className={styles.gradient} />
+      <div className={`${styles.navbar} ${styles.desktop} u-justify-space-evenly`}>
         <Link href="/" className="u-my-auto">
-          <img src={`/home.png`} alt="logo" className="logo" />
+          <img src={`/home.png`} alt="logo" className={styles.logo} />
         </Link>
-        <div className="nav-header">
-          <div className="nav-title">
+        <div className={styles.header}>
+          <div className={styles.title}>
             <Link href="/">
               <svg
                 viewBox="0 0 610 50.7"
@@ -86,24 +87,24 @@ const Navbar = () => {
         {/*  <Link href="/">Resources</Link>*/}
         {/*  <Link href="/">Company</Link>*/}
         {/*</div>*/}
-        <div className="nav-actions u-align-self-center">
+        <div className={`${styles.actions} u-align-self-center`}>
           {/*<button className="u-btn u-btn--action">Try it now</button>*/}
           <button className="u-btn u-btn--focus">Login</button>
         </div>
       </div>
 
-      <div className="sm-nav">
-        <header className="sm-header">
+      <div className={styles.mobile}>
+        <header className={styles.mobileHeader}>
           <Link href="/" className="u-my-auto">
-            <img src={`/australian.svg`} alt="logo" className="logo" />
+            <img src={`/australian.svg`} alt="logo" className={styles.logo} />
           </Link>
 
-          <input className="side-menu" type="checkbox" id="side-menu" />
-          <label className="hamb" htmlFor="side-menu">
-            <span className="hamb-line"></span>
+          <input className={styles.sideMenu} type="checkbox" id="side-menu" />
+          <label className={styles.hamburger} htmlFor="side-menu">
+            <span className={styles.hamburgerLine}></span>
           </label>
-          <nav className="sm-menu">
-            <ul className="menu">
+          <nav className={styles.mobileMenu}>
+            <ul className={styles.menu}>
               <li>
                 <Link href="/">Products</Link>
               </li>

@@ -1,9 +1,4 @@
-.container {
-  min-height: 100vh;
-  font-family: Montserrat, sans-serif;
-}
-
-nav a {
+.sidebar a {
   font-size: 40px;
   color: #fff;
   text-decoration: none;
@@ -11,8 +6,7 @@ nav a {
   width: 70px;
   text-align: center;
 }
-
-nav {
+.sidebar {
   position: relative;
   left: 0;
   z-index: 1;

@@ -1,4 +1,4 @@
-.top-navigation {
+.topNavigation {
   width: calc(100vw - 70px);
   top: 0px;
   z-index: 1;
@@ -7,31 +7,31 @@
   padding: 5px 20px;
 }
 
-.top-navigation div,
-.top-navigation span {
+.topNavigation div,
+.topNavigation span {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.top-navigation .u-btn {
+.topNavigation .u-btn {
   width: fit-content;
   margin-left: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.top-navigation img {
+.topNavigation img {
   margin-right: 5px;
   margin-left: 5px;
 }
 
-.top-navigation .pipe {
+.topNavigation .pipe {
   margin-left: 20px;
   margin-right: 20px;
 }
 
 @media (max-width: 500px) {
-  .wrap-mobile {
+  .wrapMobile {
     flex-wrap: wrap;
-  } 
+  }
 }

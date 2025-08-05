@@ -1,4 +1,4 @@
-.footer-container {
+.container {
   /* position: fixed; */
   left: 0;
   bottom: 0;
@@ -9,6 +9,6 @@
   padding: 10px;
 }
 
-.footer-container span {
+.container span {
   font-size: 15px;
 }

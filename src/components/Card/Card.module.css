@@ -1,0 +1,18 @@
+.card {
+  width: 18.5rem;
+  min-height: 40rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  transition: all 200ms;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px #2883fb;
+}
+
+.card--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

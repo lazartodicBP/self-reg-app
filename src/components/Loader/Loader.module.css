@@ -1,4 +1,4 @@
-.bpui-preloader {
+.preloader {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -6,12 +6,9 @@
   top: 0;
 }
 
-.bpui-preloader-overlay {
+.overlay {
   background: #000;
   opacity: 0;
-}
-
-.bpui-preloader, .bpui-preloader .bpui-preloader-overlay {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -19,7 +16,7 @@
   top: 0;
 }
 
-.bpui-preloader .bpui-preloader-spinner {
+.spinner {
   background: #fff;
   border: 1px solid #12baff;
   color: #4dbdff;
@@ -28,5 +25,5 @@
   padding: 15px;
   position: absolute;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
