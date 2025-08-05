@@ -71,6 +71,20 @@ const HomePage: NextPage<Props> = ({ products }) => {
             ))
           )}
         </div>
+      {/* Plans */}
+      <div className="home-page__plans">
+        {products.length === 0 ? (
+          <Loader />
+        ) : (
+          products.map((item, index) => (
+            <PlanCard
+              key={item.Id}
+              product={item}
+              description={descriptions[item.Id]}
+              type={index}
+            />
+          ))
+        )}
       </div>
 
       {showModal && (
@@ -102,4 +116,6 @@ const HomePage: NextPage<Props> = ({ products }) => {
   )
 }
 
+  </div>
+)
 export default HomePage
