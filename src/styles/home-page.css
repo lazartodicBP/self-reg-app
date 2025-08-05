@@ -10,7 +10,51 @@
     font-size: 30px;
     line-height: 30px;
     text-transform: capitalize;
-    color: #000;
+    color: var(--color-black);
+}
+
+.edit-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.editable {
+    cursor: pointer;
+}
+
+.editable:hover {
+    outline: 1px dashed var(--color-gray-600);
+}
+
+.color-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.color-modal__content {
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color-modal__actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
 }
 
 .home-page__subheader {
@@ -19,7 +63,7 @@
     font-size: 15px;
     line-height: 18px;
     text-transform: capitalize;
-    color: #999;
+    color: var(--color-gray-600);
 }
 
 .home-page__plans {
@@ -36,7 +80,7 @@
 .home-page__divider {
     margin: 10px 5px;
     width: 100%;
-    border-top: 1px solid #999;
+    border-top: 1px solid var(--color-gray-600);
 }
 
 .home-page__background {

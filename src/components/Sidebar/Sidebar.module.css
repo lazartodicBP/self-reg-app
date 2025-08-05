@@ -1,25 +1,19 @@
-.container {
-  min-height: 100vh;
-  font-family: Montserrat, sans-serif;
-}
-
-nav a {
+.sidebar a {
   font-size: 40px;
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   padding: 20px;
   width: 70px;
   text-align: center;
 }
-
-nav {
+.sidebar {
   position: relative;
   left: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: #058BCF;
+  background: var(--color-blue-800);
 }
 
 section {
@@ -35,7 +29,7 @@ section {
 }
 
 section h1 {
-  color: #fff;
+  color: var(--color-white);
   font-size: 50px;
   text-transform: uppercase;
   opacity: 0;

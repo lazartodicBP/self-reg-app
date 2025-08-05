@@ -1,16 +1,7 @@
+@import url(src/styles/colors.css);
 @import url(src/styles/utils.css);
 @import url(src/styles/home-page.css);
-@import url(src/components/Card/Card.css);
-@import url(src/components/Divider/Divider.css);
-@import url(src/components/Footer/Footer.css);
-@import url(src/components/Input/Input.css);
-@import url(src/components/Loader/Loader.css);
-@import url(src/components/Navbar/Navbar.css);
 @import url(src/components/PaymentForm/PaymentForm.css);
-@import url(src/components/Select/Select.css);
-@import url(src/components/Sidebar/Sidebar.css);
-@import url(src/components/Tabs/Tabs.css);
-@import url(src/components/TopNavigation/TopNavigation.css);
 @import url(src/pages/register/RegisterPage.css);
 @import url(src/pages/portal/PortalPage.css);
 

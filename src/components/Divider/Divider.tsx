@@ -1,9 +1,9 @@
 import React from "react";
-// import "./Divider.css";
+import styles from "./Divider.module.css";
 
 const Divider = ({children}) => {
 
-  return <h3 className="divider">
+  return <h3 className={styles.divider}>
     {children}
   </h3>
 

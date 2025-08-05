@@ -1,16 +1,22 @@
 import React from "react";
 import Link from "next/link";
+import styles from "./Navbar.module.css";
+import GradientBar from "@/components/GradientBar/GradientBar";
 
-const Navbar = () => {
+type Props = {
+  headerColor?: string;
+};
+
+const Navbar: React.FC<Props> = ({ headerColor }) => {
   return (
     <div>
-      <div className="gradient" />
-      <div className="nav lg-nav u-justify-space-evenly ">
+      <GradientBar color={headerColor} />
+      <div className={`${styles.navbar} ${styles.desktop} u-justify-space-evenly`}>
         <Link href="/" className="u-my-auto">
-          <img src={`/home.png`} alt="logo" className="logo" />
+          <img src={`/home.png`} alt="logo" className={styles.logo} />
         </Link>
-        <div className="nav-header">
-          <div className="nav-title">
+        <div className={styles.header}>
+          <div className={styles.title}>
             <Link href="/">
               <svg
                 viewBox="0 0 610 50.7"
@@ -21,7 +27,7 @@ const Navbar = () => {
               >
                 <g id="Shape_2">
                   <g>
-                    <path fillRule="evenodd" clipRule="evenodd" fill="#F15B46" d="M607.8,18.1l-0.1,0l0.1-0.9l0-0.5l0-0.4l0-0.6l-0.3,0.3l-0.3-0.8
+                    <path fillRule="evenodd" clipRule="evenodd" fill="var(--color-red-100)" d="M607.8,18.1l-0.1,0l0.1-0.9l0-0.5l0-0.4l0-0.6l-0.3,0.3l-0.3-0.8
                       l-0.9-0.9l-0.4-1.1l-0.4-0.2l-0.1,0.2l-0.3-0.4l-0.2-0.8l-0.3-0.4l-0.2-0.6l-0.5-0.3l-0.3-0.4l-0.6-0.1l-0.5-0.5l-0.2-0.6L602.2,8
                       l-0.3-0.2L601.7,7l0-0.7l-0.2-0.5L601,5.3l-0.2,0l-0.3,0.2l-0.4-0.8L600.1,4l-0.2-0.5l0-0.4l-0.3-0.1l0-0.8L599.2,2L599,2.2
                       l-0.1,0.3l0,0.6l-0.3,0.4l0,0.4l-0.1,0.6l-0.2,0.7l0,0.6l0.1,0.4l-0.2,0.4l0,0.9L598,8l-0.1,0.4l-0.4,0.3l-0.7-0.3l-0.5-0.5
@@ -43,7 +49,7 @@ const Navbar = () => {
                 </g>
                 <g id="Shape_2_1_">
                   <g>
-                    <path fillRule="evenodd" clipRule="evenodd" fill="#004563" d="M4,2.1L2.7,17h1.9c0.9-3.5,0.9-9.7,7.5-9.7h4.7v38.1l-7,0.9v2.3
+                    <path fillRule="evenodd" clipRule="evenodd" fill="var(--color-blue-1000)" d="M4,2.1L2.7,17h1.9c0.9-3.5,0.9-9.7,7.5-9.7h4.7v38.1l-7,0.9v2.3
                       h25.5v-2.3l-1.9-0.1c-4.9-0.8-5.1-0.4-5.1-4.2V7.4h4.8c6.6,0,6.7,6.2,7.6,9.7h1.8L41.2,2.1H4z M69.6,4.6l0.8,0.1
                       c4.9,0.6,5.4,0.4,5.4,4.2v13.4H60.8V5.5L67,4.6V2.1H43.2v2.5l1.5,0.1c4.9,0.5,5.7,0.4,5.7,4.2v36.6l-7.2,0.9v2.3H67v-2.3l-0.8-0.1
                       c-4.9-0.6-5.4-0.4-5.4-4.2V26.7h14.9v18.8l-6.2,0.9v2.3h23.7v-2.3l-0.9-0.1c-4.9-0.5-5.2-0.4-5.2-4.2V5.5l6.2-0.9V2.1H69.6V4.6z
@@ -86,24 +92,24 @@ const Navbar = () => {
         {/*  <Link href="/">Resources</Link>*/}
         {/*  <Link href="/">Company</Link>*/}
         {/*</div>*/}
-        <div className="nav-actions u-align-self-center">
+        <div className={`${styles.actions} u-align-self-center`}>
           {/*<button className="u-btn u-btn--action">Try it now</button>*/}
           <button className="u-btn u-btn--focus">Login</button>
         </div>
       </div>
 
-      <div className="sm-nav">
-        <header className="sm-header">
+      <div className={styles.mobile}>
+        <header className={styles.mobileHeader}>
           <Link href="/" className="u-my-auto">
-            <img src={`/australian.svg`} alt="logo" className="logo" />
+            <img src={`/australian.svg`} alt="logo" className={styles.logo} />
           </Link>
 
-          <input className="side-menu" type="checkbox" id="side-menu" />
-          <label className="hamb" htmlFor="side-menu">
-            <span className="hamb-line"></span>
+          <input className={styles.sideMenu} type="checkbox" id="side-menu" />
+          <label className={styles.hamburger} htmlFor="side-menu">
+            <span className={styles.hamburgerLine}></span>
           </label>
-          <nav className="sm-menu">
-            <ul className="menu">
+          <nav className={styles.mobileMenu}>
+            <ul className={styles.menu}>
               <li>
                 <Link href="/">Products</Link>
               </li>
