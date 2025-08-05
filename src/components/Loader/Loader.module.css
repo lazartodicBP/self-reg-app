@@ -1,0 +1,29 @@
+.preloader {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.overlay {
+  background: var(--color-black);
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.spinner {
+  background: var(--color-white);
+  border: 1px solid var(--color-blue-400);
+  color: var(--color-blue-300);
+  font-size: 1.2em;
+  left: 50%;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,12 +1,15 @@
 import React from "react";
-// import "./Tabs.css";
+import styles from "./Tabs.module.css";
 
 const Tabs = (props) => {
 
-  return <div className="tabs">
+  return <div className={styles.tabs}>
     {
       props.data?.map(item => (
-        <div key={item.value} className={`tab ${props.value === item.value ? "selected" : ""}`}>
+        <div
+          key={item.value}
+          className={`${styles.tab} ${props.value === item.value ? styles.selected : ""}`}
+        >
           {item.label}
         </div>
       ))

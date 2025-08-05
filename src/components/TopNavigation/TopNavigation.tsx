@@ -1,10 +1,10 @@
 import React from "react";
-// import "./TopNavigation.css";
+import styles from "./TopNavigation.module.css";
 
 const TopNavigation = (props) => {
   return (
-    <div className="top-navigation">
-      <div className="u-flex u-justify-between wrap-mobile">
+    <div className={styles.topNavigation}>
+      <div className={`u-flex u-justify-between ${styles.wrapMobile}`}>
         <div className="u-flex">
           <span>
             Hi, {props.username}! You have {props.daysLeft} Days Left In Your
@@ -23,7 +23,7 @@ const TopNavigation = (props) => {
             alt="img"
             className="u-my-auto"
           />
-          <span className="pipe">|</span>
+          <span className={styles.pipe}>|</span>
           <span>Help</span>
         </div>
       </div>

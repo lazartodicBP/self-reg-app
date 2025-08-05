@@ -1,7 +1,7 @@
 .select {
   box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-400);
   border-radius: 5px;
   padding: 8px;
   font-size: 14px;

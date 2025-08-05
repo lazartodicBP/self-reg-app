@@ -74,9 +74,9 @@
 .thankyou-box {
   text-align: center;
   padding: 2rem 3rem;
-  border: 1px solid #1a1f26;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--color-gray-800);
+  background: var(--color-white);
+  box-shadow: 0 2px 8px rgba(var(--color-black-rgb), 0.15);
 }
 
 .thankyou-box h1 {
@@ -84,11 +84,11 @@
   font-size: clamp(2.5rem, 6vw, 3rem);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #1a1f26;
+  color: var(--color-gray-800);
 }
 
 .thankyou-box p {
   margin: 0;
   font-size: 1.125rem;
-  color: #4a4f56;
+  color: var(--color-gray-700);
 }

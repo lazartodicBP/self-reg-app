@@ -5,5 +5,5 @@
   font-size: 15px;
   line-height: 15px;
   text-transform: capitalize;
-  color: #0b8ecf;
+  color: var(--color-blue-700);
 }

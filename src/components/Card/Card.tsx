@@ -1,4 +1,5 @@
 import React, { FC, PropsWithChildren } from "react";
+import styles from "./Card.module.css";
 
 interface CardProps extends PropsWithChildren {
   disabled?: boolean;
@@ -7,7 +8,11 @@ interface CardProps extends PropsWithChildren {
 
 const Card: FC<CardProps> = ({ children, disabled, className }) => {
   return (
-    <div className={`card-container ${disabled ? "disabled-card" : ""} ${className}`}>
+    <div
+      className={`${styles.card} ${disabled ? styles["card--disabled"] : ""} ${
+        className || ""
+      }`}
+    >
       {children}
     </div>
   );
