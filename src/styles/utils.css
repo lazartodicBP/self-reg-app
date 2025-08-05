@@ -12,8 +12,8 @@
 .u-align-self-center  { align-self: center; }
 
 
-.u-text-blue          { color: #00b1eb; }
-.u-text-black         { color: #000; }
+.u-text-blue          { color: var(--color-blue-500); }
+.u-text-black         { color: var(--color-black); }
 
 .u-btn {
     display: inline-flex;
@@ -21,8 +21,8 @@
     justify-content: center;
     font-weight: 500;
     font-size: 1.2rem;
-    color: #237d9b;
-    background-color: #FFFFFF;
+    color: var(--color-blue-900);
+    background-color: var(--color-white);
     border: none;
     border-radius: 0.1rem;
     width: 5rem;
@@ -30,12 +30,12 @@
     cursor: pointer;
 }
 
-.u-btn--action   { background-color: #28ADFB; }
+.u-btn--action   { background-color: var(--color-blue-600); }
 .u-btn--focus    {
-    background-color: #FFFFFF;
-    border: 1px solid #237d9b;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-blue-900);
 
     &:hover {
-        background-color: #d8e8ee;
+        background-color: var(--color-blue-100);
     }
 }

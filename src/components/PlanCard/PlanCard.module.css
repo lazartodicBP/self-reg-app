@@ -1,0 +1,127 @@
+.planCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 8px;
+  padding: 16px;
+  width: 280px;
+  position: relative;
+  transition: box-shadow 0.2s ease;
+}
+
+.inner {
+  height: 100%;
+}
+
+.logo {
+  height: 90px;
+  margin: auto;
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: var(--color-black);
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.priceDescription {
+  margin: auto 0;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+}
+
+.description {
+  margin-top: 5px;
+  font-size: 16px;
+  height: 2rem;
+}
+
+.descriptionSecondary {
+  font-size: 14px;
+}
+
+.images {
+  display: flex;
+  margin: auto;
+  gap: 10px;
+  padding: 50px 0;
+}
+
+.image {
+  width: 20px;
+  height: 20px;
+}
+
+.tryBtnContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+
+.tryBtn {
+  width: 12rem;
+  height: 3rem;
+  padding: 8px 10px;
+  text-decoration: none;
+  background-color: var(--color-red-200);
+  color: var(--color-white);
+  border: 0;
+}
+
+.tryBtn:hover {
+  background-color: var(--color-red-300);
+}
+
+.titleGradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--gradient-start, currentColor);
+}
+
+.type0 {
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
+}
+
+.type1 {
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
+}
+
+.type2 {
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
+}
+
+.type3 {
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
+}
+
+.type0 .titleGradient,
+.type1 .titleGradient,
+.type2 .titleGradient,
+.type3 .titleGradient {
+  background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+
+.divider {
+  margin: 10px 5px;
+  width: 100%;
+  border-top: 1px solid var(--color-gray-600);
+}
