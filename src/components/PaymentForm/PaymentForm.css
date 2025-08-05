@@ -1,6 +1,6 @@
 .form-header {
-  border-bottom: 1px solid #bbb;
-  color: #000;
+  border-bottom: 1px solid var(--color-gray-500);
+  color: var(--color-black);
   font-size: 20px;
   font-weight: 300;
   margin: 0;
@@ -42,9 +42,9 @@
 }
 
 .billing-contact-form > .form-fields input {
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--color-gray-400);
   box-sizing: border-box;
-  color: #000;
+  color: var(--color-black);
   display: block;
   font-size: 14px;
   height: 34px;
@@ -60,7 +60,7 @@
   flex-shrink: 0;
   font-size: 14px;
   font-weight: 500;
-  color: #000;
+  color: var(--color-black);
   overflow: hidden;
   text-align: right;
   text-overflow: ellipsis;
@@ -69,7 +69,7 @@
 
 .step-btn {
   align-items: center;
-  /*background: #4dbdff;*/
+  /*background: var(--color-blue-300);*/
   border: none;
   border-radius: 0.1rem;
   font-size: 1.2rem;

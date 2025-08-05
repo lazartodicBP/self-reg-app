@@ -1,9 +1,9 @@
 import React from "react";
-// import "./Sidebar.css";
+import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {
   return (
-    <nav>
+    <nav className={styles.sidebar}>
       <a href="#burger">
         <img src={`/burger-icon.png`} alt="burger" />
       </a>

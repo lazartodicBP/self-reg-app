@@ -1,12 +1,12 @@
 import React from "react";
-// import "./Select.css";
+import styles from "./Select.module.css";
 
 const Select = (props) => {
   const selectProps = {
     ...props,
     options: null
   };
-  return <select className="select" {...selectProps}>
+  return <select className={styles.select} {...selectProps}>
     <option></option>
     {
       props.options?.map(item => (
