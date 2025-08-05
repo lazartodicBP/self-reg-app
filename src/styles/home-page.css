@@ -13,6 +13,50 @@
     color: var(--color-black);
 }
 
+.edit-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.editable {
+    cursor: pointer;
+}
+
+.editable:hover {
+    outline: 1px dashed var(--color-gray-600);
+}
+
+.color-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.color-modal__content {
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color-modal__actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
 .home-page__subheader {
     margin-top: 10px;
     font-weight: 400;
