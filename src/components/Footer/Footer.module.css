@@ -3,8 +3,8 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(255 255 255 / 59%);
-  color: black;
+  background-color: rgb(var(--color-white-rgb) / 59%);
+  color: var(--color-black);
   text-align: center;
   padding: 10px;
 }

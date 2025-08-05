@@ -10,7 +10,7 @@
     font-size: 30px;
     line-height: 30px;
     text-transform: capitalize;
-    color: #000;
+    color: var(--color-black);
 }
 
 .home-page__subheader {
@@ -19,7 +19,7 @@
     font-size: 15px;
     line-height: 18px;
     text-transform: capitalize;
-    color: #999;
+    color: var(--color-gray-600);
 }
 
 .home-page__plans {
@@ -36,7 +36,7 @@
 .home-page__divider {
     margin: 10px 5px;
     width: 100%;
-    border-top: 1px solid #999;
+    border-top: 1px solid var(--color-gray-600);
 }
 
 .home-page__background {

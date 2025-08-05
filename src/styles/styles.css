@@ -1,3 +1,4 @@
+@import url(src/styles/colors.css);
 @import url(src/styles/utils.css);
 @import url(src/styles/home-page.css);
 @import url(src/components/PaymentForm/PaymentForm.css);

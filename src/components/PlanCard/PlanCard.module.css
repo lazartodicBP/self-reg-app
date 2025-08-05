@@ -1,8 +1,8 @@
 .planCard {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
   border-radius: 8px;
   padding: 16px;
   width: 280px;
@@ -25,7 +25,7 @@
   font-size: 26px;
   line-height: 30px;
   text-transform: capitalize;
-  color: #000;
+  color: var(--color-black);
 }
 
 .price {
@@ -77,13 +77,13 @@
   height: 3rem;
   padding: 8px 10px;
   text-decoration: none;
-  background-color: #ed5843;
-  color: #ffffff;
+  background-color: var(--color-red-200);
+  color: var(--color-white);
   border: 0;
 }
 
 .tryBtn:hover {
-  background-color: #b14132;
+  background-color: var(--color-red-300);
 }
 
 .titleGradient {
@@ -94,23 +94,23 @@
 }
 
 .type0 {
-  --gradient-start: #130909;
-  --gradient-end: #130909;
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
 }
 
 .type1 {
-  --gradient-start: #130909;
-  --gradient-end: #130909;
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
 }
 
 .type2 {
-  --gradient-start: #130909;
-  --gradient-end: #130909;
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
 }
 
 .type3 {
-  --gradient-start: #130909;
-  --gradient-end: #130909;
+  --gradient-start: var(--color-gray-900);
+  --gradient-end: var(--color-gray-900);
 }
 
 .type0 .titleGradient,
@@ -123,5 +123,5 @@
 .divider {
   margin: 10px 5px;
   width: 100%;
-  border-top: 1px solid #999999;
+  border-top: 1px solid var(--color-gray-600);
 }
